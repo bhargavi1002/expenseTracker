@@ -28,7 +28,7 @@ const Card = ({ title,money,buttonText,buttonType, handleClick, success=true }) 
           {`₹${money}`}
         </span>
       </p>
-      <Button handleClick={handleClick} style={buttonType} color={buttonColor}  style={{ fontSize: '18px' }} >
+      <Button handleClick={handleClick} style={buttonType} color={buttonColor}>
       {buttonText}
       </Button>
     </div>
