@@ -1,0 +1,94 @@
+.card{
+    display: flex;
+    justify-content: space-between;   
+    padding: 10px;
+    height: 4rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: 1px solid #9B9B9B;
+    
+}
+
+.cardInner{
+    display: flex;
+    align-items:center;
+    margin-left:5px;
+    margin-left:10px;
+    gap: 20px;
+}
+
+.cardData{
+    display: flex;
+    align-items: last baseline;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.2;
+}
+.cardData h5,
+.cardData p {
+  margin: 0; 
+  padding: 0;
+  font-size: 1rem;
+  font-family: Open Sans;
+}
+
+.cardData h5{
+  font-weight: 400px;
+}
+.cardPrice{
+    color:#F4BB4A;
+    font-weight: 700px;
+}
+
+.cardInner:nth-of-type(1) p {
+    color: #9B9B9B; 
+    font-weight:400px;
+  }
+
+.buttonWrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+  }
+
+  .cardDelete,
+  .cardEdit{
+    border: none;
+    padding: 5px 8px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 40px; 
+    height: 40px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    box-shadow:0px 4px 4px 0px #00000040;
+    color:#FFFFFF;
+}
+
+.cardDelete svg,
+.cardEdit svg {
+  color: inherit;
+  font-size: 24px; 
+  margin: 0;
+}
+.icons {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    background-color: #F0F0F0; 
+    border:none; 
+    font-size: 20px; 
+  }
+  
+
+.cardDelete{
+    background-color:#FF3E3E ;
+}
+.cardEdit{
+  background-color:#F4BB4A ;
+}

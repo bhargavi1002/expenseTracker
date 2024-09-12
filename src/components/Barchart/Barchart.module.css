@@ -1,0 +1,21 @@
+.chartContainer {
+  margin-left: 10px; 
+}
+
+.chartContainer h2{
+  color:#FFFFFF;
+  font-family: Ubuntu;
+  font-style: italic;
+}
+
+.barChartWrapper{
+  background-color: #ffffff;
+  border-radius: 15px;
+  width:35vw;
+  height:37vh;
+  margin-bottom: 20px;
+  }
+  .barContainer h2{
+    color: #fff;
+    font-family: Ubuntu;
+  }

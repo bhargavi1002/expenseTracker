@@ -1,0 +1,19 @@
+.formWrapper{
+    display: flex;
+    gap: 28px;
+
+}
+.formWrapper input{
+    min-width:200px;
+    min-height: 20px;
+    padding: 10px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    font-family: Sans;
+    font-size: 16px;
+    border-radius: 10px;
+    outline: none; 
+    border-color: initial;
+}
+.formWrapper input::placeholder{
+ color: #919191;
+}

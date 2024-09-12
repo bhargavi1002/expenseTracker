@@ -1,0 +1,77 @@
+.container{
+    margin-left: 2%;
+    padding: 1rem;
+}
+.container h1{
+    color:#FFFFFF ;
+}
+
+.containerWhole{
+    display: flex;
+    background-color: #626262;
+    align-items: center;
+    width:95%;
+    height:37vh;
+    margin-top: 0;
+    margin-left:20px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.cardContainer{
+    display: flex;   
+    margin: 40px;
+    align-items: center;
+    gap:20px
+}
+
+.belowContainer{
+  display: flex;
+  width:95%;
+  align-items: center;
+  height:auto;
+  margin:20px;
+}
+
+.chartContainer {
+    margin:0
+  }
+
+.modal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background-color:#EFEFEFD9;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 100%;
+}
+
+.modal h2{
+    color:#000000;
+
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFFFFFC4;
+  }
+
+  .chartContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+  height: 400px;
+  }
+  

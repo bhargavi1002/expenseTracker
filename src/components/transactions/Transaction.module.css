@@ -1,0 +1,21 @@
+.list{
+    background-color: #ffffff;
+    border-radius: 15px;
+    width:50vw;
+    height:37vh;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.transactionWrapper{
+    margin-right: 30px;
+}
+
+.transactionWrapper h2{
+    color:#ffffff;
+    font-family: Ubuntu;
+    font-style: italic;
+    font-weight: 700px;
+}
