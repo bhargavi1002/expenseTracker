@@ -24,7 +24,7 @@ const PieCharts =({data}) => {
         <PieChart width={600} height={500} margin={{ left:0}}>
           <Pie
             data={data}
-            cx="45%"
+            cx="50%"
             cy="50%"
             labelLine={false}
             label={renderCustomizedLabel}

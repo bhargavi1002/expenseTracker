@@ -23,7 +23,7 @@ const Card = ({ title,money,buttonText,buttonType, handleClick, success=true }) 
           WebkitBackgroundClip: 'text',
           display: 'inline-block',
           padding: '0 5px',
-          fontSize: '18px', 
+
         }}>
           {`₹${money}`}
         </span>
