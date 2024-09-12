@@ -49,7 +49,7 @@ const Transaction = ({ transactions, title, editTransaction, balance, setBalance
     return(
         <div className={styles.transactionWrapper}>
             {title && <h2>{title}</h2>}
-
+             
              { transactions.length >0 ?
                 <div className={styles.list}>
                     <div>
@@ -69,7 +69,7 @@ const Transaction = ({ transactions, title, editTransaction, balance, setBalance
                     </div>
                     : (
                         <div className={styles.noTransaction}>
-                            <p>No transaction</p>
+                            <p>No transactions!</p>
                         </div>
                     )
                 }

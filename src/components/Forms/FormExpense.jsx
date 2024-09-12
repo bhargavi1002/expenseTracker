@@ -21,14 +21,17 @@ const FormExpense = ({setIsOpen, expenseList, setExpenseList, editId, setBalance
 
     const handleAdd = (e) =>{
         e.preventDefault()
-        if(balance < Number(formData.price)){
-            enqueueSnackbar("Price should be less than the wallet balance",{variant:"warning"})
-            setIsOpen(false)
-            return
+        const expensePrice = Number(formData.price);
+        if (balance === 0) {
+            enqueueSnackbar("Cannot add expense. Your wallet balance is zero!", { variant: "warning" });
+            return;  
         }
+        if (expensePrice > balance) {
+            enqueueSnackbar("Price should be less than the wallet balance", { variant: "warning" });
+            return;  
+          }
 
-
-        setBalance(prev => prev - Number(formData.price))
+       setBalance(prev => prev - expensePrice);
         const endId = expenseList.length > 0 ? expenseList[0].id:0
         setExpenseList(prev => [{...formData, id:endId + 1},...prev])
 
@@ -43,6 +46,12 @@ const FormExpense = ({setIsOpen, expenseList, setExpenseList, editId, setBalance
 
     const handleEdit =(e) =>{
         e.preventDefault();
+
+        const updatedPrice = Number(formData.price); 
+        if (updatedPrice > balance) {
+            enqueueSnackbar("Updated price should be less than the wallet balance", { variant: "warning" });
+            return; 
+          }
         if (editId) {
             const updatedExpenses = expenseList.map((item) =>
                 item.id === editId ? { ...item, ...formData } : item

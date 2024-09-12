@@ -39,11 +39,12 @@ const PieCharts =({data}) => {
           </Pie>
           <Legend iconType='rect' verticalAlign='bottom'  iconSize={20}
           layout="horizontal"       
-          align="center"           
+          align="center"        
           wrapperStyle={{      
             marginTop: '10px',    
             gap: '30px',            
           }} />
+          
         </PieChart>
       </ResponsiveContainer>
     );

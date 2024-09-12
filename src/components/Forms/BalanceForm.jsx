@@ -10,11 +10,13 @@
 
        const handleSubmit = (e) =>{
         e.preventDefault()
+        
+        const incomeAmount = Number(income);
 
-        if(Number(income) < 0){
+        if(incomeAmount <= 0){
           enqueueSnackbar("Income should be greater than 0", {variant: "warning"})
           setIsOpen(false)
-          return
+          return;
         }
         setBalance(prev => prev + Number(income))
         setIsOpen(false)
